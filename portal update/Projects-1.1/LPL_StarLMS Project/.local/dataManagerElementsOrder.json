@@ -1,0 +1,289 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "StatusTracker_DT&StateMachine_1",
+        "Statustrackerpath&StateMachine_1",
+        "StartTime&StateMachine_1",
+        "EndTime&StateMachine_1",
+        "StatusRowIndex&StateMachine_1",
+        "Start_Time&StateMachine_1",
+        "ShouldStop&Sequence_25",
+        "StarttimeDate&Sequence_37",
+        "TimeDiff&Sequence_37",
+        "End_Time&Sequence_39",
+        "TimeDiff&Sequence_42",
+        "AHT&Sequence_42"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder",
+        "ReportPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "GetQ_OldData&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "Hoowla_Username",
+        "Hoowla_Password",
+        "InputFileDT",
+        "StarLMS_Username",
+        "StarLMS_Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla codes/Hoowla_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Is_HoowlaLogin",
+        "HoowlaUserName",
+        "HWPassword",
+        "HoowlaPassword",
+        "Config",
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder",
+        "ReportPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "StarLMS Codes/StarLMS_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config",
+        "StarLMS_UserName",
+        "StarLMS_Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "CaseID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LPL_StarLMS_Performer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MoveNXTProcess&Flowchart_1",
+        "HWclient2&Flowchart_1",
+        "HWpostcode&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FInalCompletionDate",
+        "HWclient1",
+        "HWPropertyAddress",
+        "Is_MLCaseOpened",
+        "MLCaseRef",
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "Hoowla_CaseID",
+        "LMS_ReferenceNum",
+        "Is_LMSCase_Opened"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla codes/Hoowla Case Opening.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CaseOpened&Sequence_1",
+        "PeopleInvolvedList&Sequence_1",
+        "ComplDateA&Sequence_1",
+        "Hoowla_UI&Sequence_1",
+        "ALERTSlist_DT&Sequence_5",
+        "LMSsplit1&Sequence_5",
+        "CASEData_Exists&Sequence_5",
+        "AlertsText&Sequence_5",
+        "AlertDT_str&Sequence_29",
+        "str_LMSCase&Sequence_46",
+        "str_LMSCase&Sequence_35",
+        "CASEData_Exists&Sequence_41",
+        "str_LMSCase&Sequence_42",
+        "BuyerSide_Client&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Hoowla_CaseID",
+        "HWclient1",
+        "HWclient2",
+        "MoveNxtProcess",
+        "FInalCompletionDate",
+        "HWPropertyAddress",
+        "IO_StatusTracker_DT",
+        "StatusIndexRow",
+        "LMS_ReferenceNum",
+        "HoowlaPostcode",
+        "bool_LMSCase"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "StarLMS Codes/Open_StarsLMS_Case.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_SearchCaseNum_Exist&Sequence_1",
+        "Is_SelectCase_Exist&Sequence_1",
+        "CaseList_DT&Sequence_1",
+        "Is_CaseOpened&Sequence_1",
+        "LMScounter&Sequence_1",
+        "HWclient1split&Sequence_17",
+        "HWclient2split&Sequence_17",
+        "LMSClientName&Sequence_19",
+        "LMSPostcode&Sequence_19"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "LMS_ReferenceNum",
+        "Hoowla_CaseID",
+        "HWclient1",
+        "HWclient2",
+        "HWpostcode",
+        "HWpropertyAddress",
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "Is_LMSCase_Opened"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "StarLMS Codes/Update Completion date_StarLMS.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SendHK_Counter&Sequence_1",
+        "Task_Row&Sequence_1",
+        "Status_Row&Sequence_1",
+        "CasePlan_DT&Sequence_1",
+        "CaseOpened&Sequence_1",
+        "HWcompletionDate1&Sequence_1",
+        "Task_Counter&Sequence_3",
+        "CasePlan_Str&Sequence_3",
+        "StarLMS_RefNum&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "HWcompletionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LPL_StarLMS HomePages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions",
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder",
+        "ReportPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

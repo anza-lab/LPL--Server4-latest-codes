@@ -1,0 +1,43 @@
+---------------------------
+Message Box
+---------------------------
+Milestone,Completed
+
+Initial Instruction Received,15/08/2023
+
+Welcome Pack Issued,20/06/2023
+
+Remortgage Questionnaire Received,checked
+ 
+	22/06/2023
+
+Signed Mortgage Deed Received,checked
+ 
+	10/07/2023
+
+Mortgage Offer Received,checked
+ 
+	29/06/2023
+
+Legal Review Commenced,checked
+  15/08/2023
+
+Redemption Statement Received,unchecked
+ 
+
+Remortgage set to complete on,unchecked
+ 
+	
+
+Completed On,unchecked
+ 
+	
+
+Registration Complete,
+
+Case Closed,
+
+
+---------------------------
+OK   
+---------------------------

@@ -1,0 +1,539 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "FinalReport_Path&StateMachine_1",
+        "StartTime&StateMachine_1",
+        "FRtrackerPath&StateMachine_1",
+        "FNreportStatusDT&StateMachine_1",
+        "FNreportIndex&StateMachine_1",
+        "ShouldStop&Sequence_25",
+        "CaseStartTime&Sequence_28",
+        "CaseEndTime&Sequence_28",
+        "AHT&Sequence_28",
+        "TimDiff&Sequence_28"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Hoowla_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Hoowla_passwordA&Sequence_1",
+        "Is_Hoowla_LoggedIn&Sequence_2",
+        "Hoowla_Url&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Hoowla_Password",
+        "Hoowla_Username",
+        "In_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Check_TitleCheck_TODOlist.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TODOLIST_TEXT&Sequence_1",
+        "RowCounter&Sequence_1",
+        "MrakAsDone_Row&Sequence_5",
+        "Todo_Row&Sequence_5",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_IsRequestContract_Done"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Chasing Contract Diary_Performer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_Case_Hold_Fell&Flowchart_1",
+        "Is_MemoExist&Sequence_1",
+        "EstateAgent_Email&Flowchart_1",
+        "EstateEmail&Flowchart_1",
+        "Out_IsEstateMail_Valid&Flowchart_1",
+        "Is_S95LetterDoc_Found&Flowchart_1",
+        "Is_DetailsValid&Flowchart_1",
+        "Is_Client_Found&Flowchart_1",
+        "Is_EstateAgent_Found&Flowchart_1",
+        "Is_OtherSide_Found&Flowchart_1",
+        "IsRequestContract_Done&Flowchart_1",
+        "Is_CaseOpened&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_CaseURL",
+        "In_Config",
+        "FNreportIndex",
+        "FNreportStatusDT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Extracting_Cases.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Fetching_PeoplesInvolved_Details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_ExtractData_DT&Sequence_33",
+        "ExtractDataTable&Sequence_33",
+        "Str_GetFellThrough&Sequence_33",
+        "Is_BuyerClient_Found&Sequence_1",
+        "Str_FeeEarner&Sequence_22",
+        "Str_CaseAddress&Sequence_22",
+        "Str_HoowlaRefNum&Sequence_22",
+        "Str_OthersidesSolicitor&Sequence_7",
+        "Str_EstateAgent&Sequence_14",
+        "Str_Client&Sequence_18",
+        "Get_ClientDetails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Is_Case_Hold_Fell",
+        "EstateAgent_Email",
+        "FNreportStatusDT",
+        "FNreportIndex",
+        "Is_DetailsValid",
+        "Is_Client_Found",
+        "Is_EstateAgent_Found",
+        "Is_OtherSide_Found"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Diary_CaseURL&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FNreportIndex",
+        "FNreportStatusDT",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/TitleCheck_Send_OtherSidessolicitors.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CQSdoc_Found&Sequence_1",
+        "Title_Counter&Sequence_5",
+        "OptionsRow&Sequence_5",
+        "TitleRow&Sequence_5",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/RequestContract_Mark as Done.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MarkAS_Counter&Sequence_1",
+        "MarkAsDoneRow&Sequence_5",
+        "ToDoListRow&Sequence_5",
+        "ExtractDataTable&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FNreportStatusDT",
+        "FNreportIndex"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Search Memorandum of sale doc in Case overview.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "RowCounter&Sequence_7",
+        "DescriptionRow&Sequence_7",
+        "ExtractDataTable&Sequence_2",
+        "Str_Output_DT&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Is_MemoExist"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/ReceiveClientsDOCS_Search Memo.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Memo_Counter&Sequence_4",
+        "ExtractDataTable&Sequence_3",
+        "TitleRow&Sequence_4",
+        "OptionsRow&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Is_S95LetterDoc_Found"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Search Letter to client requesting other side's solicitor.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_13",
+        "TitleRow&Sequence_14",
+        "OptionsRow&Sequence_14",
+        "Memo_Counter&Sequence_14",
+        "Is_LetterToClientRequesting_found&Sequence_1",
+        "ExtractDataTable&Sequence_3",
+        "TitleRow&Sequence_4",
+        "OptionsRow&Sequence_4",
+        "Memo_Counter&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Change_Request Contract_date.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Date1&Sequence_8",
+        "Due_Convert&Sequence_8",
+        "DateCounter&Sequence_8",
+        "DateSplit&Sequence_8",
+        "CurrentDate&Sequence_8",
+        "IncreaseDays&Sequence_8",
+        "LastDue_Date&Sequence_8",
+        "Title_Counter&Sequence_1",
+        "Due_ROW&Sequence_5",
+        "MARKASDONE_ROW&Sequence_5",
+        "TODOLIST_ROW&Sequence_5",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FNreportStatusDT",
+        "FNreportIndex"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Get Hoowla Diary cases.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_DiaryCases&Sequence_9",
+        "YesterdayDate&Sequence_8",
+        "TodayDate&Sequence_3",
+        "YesterdayDate_Year&Sequence_8",
+        "YesterdayDate_Month&Sequence_8",
+        "YesterdayDate_Day&Sequence_8",
+        "TodayDate_Day&Sequence_1",
+        "TodayDate_Year&Sequence_1",
+        "TodayDate_Month&Sequence_1",
+        "Read_InputDT&Sequence_2",
+        "InputFile_Path&Sequence_1",
+        "ExtractDataTable1&Sequence_8",
+        "ExtractDataTable&Sequence_8",
+        "Is_InputFile_Exist&Sequence_8",
+        "Is_InputFile_Exist&Sequence_3",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Getting Questionniare Doc_Get EstateAgent details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Counter&Sequence_1",
+        "Str_Questionnaire1&Sequence_1",
+        "Str_Questionnaire2&Sequence_1",
+        "Str_Questionnaire3&Sequence_1",
+        "Out1&Sequence_8",
+        "QuestionnaireDoc_Path&Sequence_1",
+        "QuestionnaireDoc_Name&Sequence_1",
+        "ReadPDFtext&Sequence_1",
+        "ExtractDataTable&Sequence_2",
+        "NameRow&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config",
+        "Is_QEmail_Valid",
+        "Q_EstateEMail",
+        "Q_EstateAgentDetails",
+        "Is_QuestionnaireDoc_Exist"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Client_Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_SPS_Email_Valid&Flowchart_1",
+        "Is_QEmail_Valid&Flowchart_1",
+        "Q_AddressMatch&Sequence_4",
+        "Q_MatchDetails1&Sequence_4",
+        "MailRegex&Sequence_6",
+        "Q_CompanyName&Sequence_4",
+        "Q_Email&Sequence_4",
+        "Q_Postcode&Sequence_4",
+        "Q_Address&Sequence_4",
+        "Q_ClientName&Sequence_4",
+        "STS_Email&Sequence_6",
+        "STS_ClientName&Sequence_6",
+        "STS_Postcode&Sequence_6",
+        "STS_Address&Sequence_6",
+        "STS_CompanyName&Sequence_6",
+        "STS_EstateAgentDetails&Flowchart_1",
+        "Q_EstateAgentDetails&Flowchart_1",
+        "Is_StarterPackDoc_Exist&Flowchart_1",
+        "Is_QuestionnaireDoc_Exist&Flowchart_1",
+        "Is_MemoDoc_Exist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "EstateEMail",
+        "Out_IsEstateMail_Valid",
+        "FNreportStatusDT",
+        "FNreportIndex",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Getting Starter pack.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StarterPackDoc_Name&Sequence_1",
+        "StarterPackDoc_Path&Sequence_1",
+        "NameRow&Sequence_1",
+        "Counter&Sequence_1",
+        "Str_StarterPack1&Sequence_1",
+        "ExtractDataTable&Sequence_8",
+        "ReadPDFtext&Sequence_18",
+        "RemoveUnwanted&Sequence_18"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config",
+        "Is_SPS_Email_Valid",
+        "STS_EstateEMail",
+        "EstateAgentDetails",
+        "Is_StarterPackDoc_Exist"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Add_People.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "ClientName",
+        "Postcode",
+        "Address",
+        "EMail",
+        "CompanyName",
+        "FNreportStatusDT",
+        "FNreportIndex",
+        "In_Config",
+        "In_CaseURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DU with Gen AI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_Clasification&Sequence_1",
+        "IFile&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/SendMessageTo_EstateAgent.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Message_Body&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_EstateAgent_Email"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Hoowla client Case Opening.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CaseOpened&Sequence_1",
+        "PeopleInvolvedList&Sequence_1",
+        "ComplDateA&Sequence_1",
+        "BuyerSide_Client&Sequence_7",
+        "HoowlaPostcode&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Hoowla_CaseID",
+        "HWclient1",
+        "HWclient2",
+        "MoveNxtProcess",
+        "FInalCompletionDate",
+        "HWPropertyAddress",
+        "FinalComletionDateA"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Codes/Chasing Contract Diary_Performer - Copy (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CaseOpened&Sequence_1",
+        "IsRequestContract_Done&Flowchart_1",
+        "Is_OtherSide_Found&Flowchart_1",
+        "Is_EstateAgent_Found&Flowchart_1",
+        "Is_Client_Found&Flowchart_1",
+        "Is_DetailsValid&Flowchart_1",
+        "Is_S95LetterDoc_Found&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FNreportStatusDT",
+        "FNreportIndex",
+        "In_Config",
+        "In_CaseURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,887 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "FNreportStatusDT&StateMachine_1",
+        "StartTime&StateMachine_1",
+        "LendersEmailConfig&StateMachine_1",
+        "DT_LenderEX_Lenders&StateMachine_1",
+        "DT_LMSConvey_Lenders&StateMachine_1",
+        "FRtrackerPath&StateMachine_1",
+        "FinalReport_Path&StateMachine_1",
+        "ShouldStop&Sequence_25",
+        "CaseStartTime&Sequence_37",
+        "CaseEndTime&Sequence_37",
+        "AHT&Sequence_37",
+        "TimDiff&Sequence_37",
+        "FNreportIndex&Sequence_37"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Checking_Wheather case is Purchase or Remortgage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_HoowlaFeeEarner&Sequence_5",
+        "Str_HoowlaReference&Sequence_5",
+        "Str_HoowlaAddress&Sequence_5",
+        "ExtractDataTable&Sequence_5",
+        "Get_Str_Persistent_InfoBox&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_HoowlaPostcode",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT",
+        "Out_PropertyValue",
+        "Out_CaseType"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Download Completion Document and Extract the Doc details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Extract_EDRS_AP1 Submission_Details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Out_EdrsApplicantName1&Sequence_1",
+        "Str_EdrsDoc_Out&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT",
+        "Out_EdrsApplicantName",
+        "In_DocumentPath",
+        "In_DocumentName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LPL_TID_DocumentValidation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CompletionDoc_Downloaded&Flowchart_1",
+        "Is_EDRS_AP1Sub_doc_Downloaded&Flowchart_1",
+        "Str_CompDoc_Postcode&Flowchart_1",
+        "Str_CompDoc_PropertyAddress&Flowchart_1",
+        "Str_EdrsApplicantName&Flowchart_1",
+        "Str_HoowlaPropertyValue&Flowchart_1",
+        "Str_HoowlaCompletionDate&Flowchart_1",
+        "Is_DatesValidated&Flowchart_1",
+        "Is_ProprietorNamesValid&Flowchart_1",
+        "Bool_CompletionExist1&Flowchart_1",
+        "Bool_CompDetails_Valid&Flowchart_1",
+        "Str_EdrsApplicantName1&Sequence_19",
+        "Str_EdrsApplicantName2&Sequence_19",
+        "EDRS_Dateformat1&Sequence_17",
+        "Str_CompDoc_Row_CreatedDate1&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Str_CompDoc_LenderName",
+        "Str_CompDoc_PropertyValue",
+        "Is_DocDetails_Valid",
+        "Out_CompDoc_Row_CreatedDate",
+        "In_Config",
+        "Out_Completion_PropertyPostcode",
+        "Out_CompDoc_RegisteredChargeDate",
+        "Out_CompDoc_ProprietorName",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Extract_CompletionDoc_Details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_CompletionDoc_Text&Sequence_1",
+        "Regx_ChargesRegister&Sequence_1",
+        "Str_PropertyRegister&Sequence_4",
+        "Str_ProprietorshipRegister&Sequence_4",
+        "Str_ProprietorshipRegister1&Sequence_4",
+        "Str_ChargesRegisterSplit&Sequence_4",
+        "Str_RegisterChargeDatesplit&Sequence_4",
+        "Str_PropertyRegister&Sequence_17",
+        "Str_ProprietorshipRegister&Sequence_17",
+        "Str_ProprietorshipRegister1&Sequence_17",
+        "Str_ChargesRegisterSplit&Sequence_17",
+        "Str_RegisterChargeDatesplit&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_CompDetails_Valid",
+        "Out_Completion_PropertyPostcode",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT",
+        "In_DocumentPath",
+        "In_DocumentName",
+        "Out_CompletionPostcode",
+        "Out_Completion_PropertyAddress",
+        "Out_ProprietorName",
+        "Out_CompDoc_PropertyValue",
+        "Out_CompDoc_LenderName",
+        "Out_RegisteredChargeDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LoopBreak&Sequence_4",
+        "Idx_Counter&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_CompletionDateConvert.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HCompletionDateA&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_IsDates_Validated",
+        "Out_FInalCompletionDate",
+        "Out_FInalHoowlaCompletionDate",
+        "In_CompRegisteredDate",
+        "In_HCompletionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Check the Lender Type.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_LenderFIle_Path&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "Out_LMS_Lenders_DT",
+        "Out_LenderExchangeLenders_DT",
+        "Out_LenderEmail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigSheets",
+        "in_ConfigFile",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/LenderEmail_Config.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LenderEMail_DT&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "out_Config",
+        "in_ConfigSheet"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Validate_CaseType_Lender_LMS_No Lender.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_LMS_LendersNameList&Sequence_1",
+        "Str_LendersNameList&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Lex_CaseType",
+        "Out_LendersType",
+        "In_Comp_LenderName",
+        "In_LMS_LendersName_DT",
+        "In_LendersName_DT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LPL_TID_Performer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Bool_HoowlaCaseOpened&Sequence_1",
+        "Str_CompDoc_RegisteredChargeDate&Sequence_1",
+        "Str_CaseType&Sequence_1",
+        "Str_PropertyValue&Sequence_1",
+        "Is_DocDetails_Valid&Sequence_1",
+        "Str_CompDoc_LenderName&Sequence_1",
+        "Str_CompDoc_PropertyValue&Sequence_1",
+        "Str_LendersType&Sequence_1",
+        "Str_CompletionDoc_PropertyPostcode&Sequence_1",
+        "Str_CompDoc_ProprietorName&Sequence_1",
+        "str_CommentBE_TID_Client&Sequence_1",
+        "Str_HoowlaPostcode&Flowchart_1",
+        "UI_HoowlaBrowser&Sequence_12",
+        "Bool_SkiptonSend_Status&Sequence_5",
+        "Str_Comment_SkiptonSend&Sequence_5",
+        "Boolean_Slms_Loggedin&Sequence_84",
+        "Bool_StarsProcess_Complete&Sequence_85",
+        "Bool_TID_clientStatus&Sequence_87",
+        "Bool_OtherLenderSend_Status&Sequence_27",
+        "Str_Comment_AnyLender&Sequence_27",
+        "Bool_Tid_ClientStatus&Sequence_29",
+        "Str_Comment_TID_client1&Sequence_29",
+        "Bool_LexProcessDone&Sequence_9",
+        "Bool_TID_clientStatus&Sequence_19",
+        "Bool_TID_clientStatus&Sequence_20",
+        "Bool_TID_clientStatus&Sequence_113",
+        "Bool_Tid_ClientStatus_NoLender&Sequence_11",
+        "Str_CommentBE_CLient_NoLender&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_LenderEmail_Config",
+        "In_LenderEx_Lenders_DT",
+        "In_CompDoc_Row_CreatedDate",
+        "In_LMSConvey_Lenders_DT",
+        "in_HoowlaCaseURL",
+        "in_Config",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Dwn Comp Doc or E-DRS AP1 Subm doc and Extr the Doc details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_Document_RowName&Sequence_11",
+        "Str_Dt_Out&Sequence_5",
+        "ExtractDataTable&Sequence_1",
+        "IndexRow&Sequence_3",
+        "Str_Document_RowName&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Doc_Dwn_Name",
+        "Out_Bool_CompletionExist1",
+        "Out_CompDoc_Row_CreatedDate",
+        "In_Doc_Name"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Send_TID to  OS Solicitor.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_EmailLinked&Sequence_12",
+        "RowCounter1&Sequence_9",
+        "ToDoList_Row&Sequence_21",
+        "MarkAsDone_Row&Sequence_21",
+        "NA_Row&Sequence_21",
+        "MarkAsDone_ExtractDataTable&Sequence_20",
+        "Doc_LoopBreak&Sequence_10",
+        "Doc_Idx_Counter&Sequence_16",
+        "LoopBreak&Sequence_12",
+        "Idx_Counter&Sequence_12",
+        "Str_TID_Doc_Address&Sequence_10",
+        "Is_TIDclient_Exist&Sequence_9",
+        "Str_TitleRow&Sequence_4",
+        "Doc_RowCounter&Sequence_3",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_PostComp_MarkAsDone.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MarkAsDone_Row&Sequence_16",
+        "NA_Row&Sequence_16",
+        "MarkAsDone_Row&Sequence_15",
+        "NA_Row&Sequence_15",
+        "MarkAsDone_Row&Sequence_10",
+        "NA_Row&Sequence_10",
+        "NA_Row&Sequence_5",
+        "MarkAsDone_Row&Sequence_5",
+        "RowCounter1&Sequence_1",
+        "ToDoList_Row&Sequence_1",
+        "Str_Extract_DT&Sequence_4",
+        "ExtractDataTable&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Lms_Lender_Exist"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HoowlaCaseURL&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_LMSConvey_Lenders_DT",
+        "In_LenderEX_Lenders_DT",
+        "In_LendersEmailConfig",
+        "in_FNreportIndex",
+        "in_FNreportStatusDT",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_Clear_OS1expiryDate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_ClearDate_Exist&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_Skipton_RemortgageLender.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Loop_Break&Sequence_2",
+        "Is_MessagePage_Opened&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_Bool_SkiptonSend_Status",
+        "Out_Comment_SkiptonSend",
+        "In_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Send_TID to Client.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_EmailLinked&Sequence_12",
+        "ExtractDataTable&Sequence_3",
+        "Doc_RowCounter&Sequence_3",
+        "Str_TitleRow&Sequence_4",
+        "Is_TIDclient_Exist&Sequence_9",
+        "Str_TID_Doc_Address&Sequence_10",
+        "Doc_LoopBreak&Sequence_10",
+        "Idx_Counter&Sequence_12",
+        "LoopBreak&Sequence_12",
+        "Doc_Idx_Counter&Sequence_16"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_CommentBE_TID_Client",
+        "Out_Bool_TID_clientStatus"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Send_TID to Lender_Lenders.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_EmailLinked&Sequence_12",
+        "Is_TID_Lender_Exist&Sequence_1",
+        "Is_EmailLinked&Sequence_27",
+        "Doc_RowCounter&Sequence_3",
+        "Str_TitleRow&Sequence_4",
+        "Str_TID_Doc_Address&Sequence_10",
+        "Doc_LoopBreak&Sequence_10",
+        "Idx_Counter&Sequence_12",
+        "LoopBreak&Sequence_12",
+        "Doc_Idx_Counter&Sequence_16",
+        "ExtractDataTable&Sequence_23",
+        "Doc_RowCounter&Sequence_23",
+        "Str_TitleRow&Sequence_24",
+        "Str_TID_Doc_Address&Sequence_26",
+        "Doc_LoopBreak&Sequence_26",
+        "Idx_Counter&Sequence_27",
+        "LoopBreak&Sequence_27",
+        "Doc_Idx_Counter&Sequence_28",
+        "ExtractDataTable&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_CaseType",
+        "Out_Bool_OtherLenderSend_Status",
+        "Out_Comment_AnyLender"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LenderExchange Workflows/Lender Exchange Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Lex_UI&Sequence_1",
+        "LEX_Password&Sequence_3",
+        "LEX_Username&Sequence_3",
+        "Bool_IsLeX_LoggedIn&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LMS Workflows/LMS portal login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LMScony_Password&Sequence_6",
+        "LMScony_Username&Sequence_6",
+        "Bool_IsLMS_LoggedIn&Sequence_2",
+        "Bool_VerifyCaptcha_Exist&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LenderExchange Workflows/LEX_Completion_Edrs_Documnet_Upload.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_Lex_FLname2&Sequence_1",
+        "Str_Lex_Client2LTname&Sequence_1",
+        "Str_Lex_Client2FTname&Sequence_1",
+        "Client2ndName&Sequence_2",
+        "Client1stName&Sequence_2",
+        "Is_ChargeRegistration_Exist&Sequence_1",
+        "Is_ApplicationDisabled&Flowchart_1",
+        "Is_LenderCase_Opened&Sequence_2",
+        "Url_LexBrowser&Sequence_1",
+        "Is_LexPropertyPostcode_Valid&Sequence_1",
+        "Is_ChargeRegisterExist&Sequence_1",
+        "Bool_EdrsReceipt_Uploaded&Sequence_1",
+        "Bool_Lex_Home_Exist&Sequence_3",
+        "ExtractDataTable&Sequence_3",
+        "Str_LenderDetails&Sequence_10",
+        "Str_Lex_ClientFTname&Sequence_10",
+        "Str_Lex_ClientLTname&Sequence_10",
+        "Str_Lex_FLname&Sequence_10",
+        "Is_LexClientDetails_Validated&Sequence_10",
+        "Str_EdrsDoc_CreatedDate&Sequence_16",
+        "Is_ConfirmApplication_Exist&Sequence_19",
+        "ExtractDataTable&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_CompletionDoc_CreatedDate",
+        "In_Lex_PropertyPostcode",
+        "In_Comple_Doc_PropriotorName",
+        "In_Comple_Doc_Path",
+        "In_EDRS_Doc_Path",
+        "In_Config",
+        "Out_Bool_LexProcessDone",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_EDRS_Receipt_Download.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EDRS_Dateformat1&Sequence_11",
+        "Is_EdrsReceipt_Exist&Sequence_2",
+        "Str_Doc_Row&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "Str_Doc_CreatedDate_Row&Sequence_1",
+        "Row_Count&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_Edrs_Doc_CreatedDate",
+        "In_EDRS_ReceiptDoc_Path"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LMS Workflows/LMS_CompDoc_EDRSdoc_Upload.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LMS_Uibrowser_out&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LMS Workflows/LMS_Upload_EDRS_Completion Doc.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_FirstDocName&Sequence_1",
+        "ExtractDataTable&Sequence_2",
+        "Str_DocName_Row&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "variable1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stars LMS Workflows/StarsLMS_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Ui_StarsLMS&TryCatch_1",
+        "Is_VerifyExist&Sequence_4",
+        "SLMS_Password&Sequence_1",
+        "SLMS_Username&Sequence_1",
+        "Bool_LMSLoginExist&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_Slms_Loggedin"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Extract_StarsLMS-Reference_Hoowla.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HoowlaLMSReference&Sequence_10",
+        "Is_CaseData_exist&Sequence_8",
+        "Is_LmsReferenceExist&Sequence_1",
+        "AlertRow&Sequence_4",
+        "ExtractDataTable&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_StarsLMS_Reference"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stars LMS Workflows/StarsLMS_Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Bool_Slms_Loggedin&Sequence_4",
+        "Str_StrasLMS_Reference&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_CompletionDoc_Path",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT",
+        "in_CompDoc_CreatedDate",
+        "In_CompDoc_Postcode",
+        "in_Address"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stars LMS Workflows/StarsLMS_Validation_update date and upload document.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_LmsUpload_Done&Sequence_1",
+        "Str_SLms_Postcode&Flowchart_1",
+        "Is_UpdateCaseExist&Sequence_1",
+        "Is_LMSCase_Opened&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_CompletionDoc_Path",
+        "In_FNreportIndex",
+        "IO_FNreportStatusDT",
+        "in_CompDoc_Postcode",
+        "in_CompletionDoc_Date",
+        "in_StarsLMS_Reference"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Extracting_InputEmails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Input_DT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Hoowla_Url&Sequence_1",
+        "Hoowla_passwordA&Sequence_1",
+        "Is_Hoowla_LoggedIn&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config",
+        "Hoowla_Username",
+        "Hoowla_Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Ui_Lex&Sequence_8",
+        "Ui_StarsLMS&Sequence_5",
+        "UI_Hoowla&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Comp Doc or E-DRS AP1 Subm Doc_Dwn.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_DocOpen&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_DocumentPath",
+        "In_DocumentName",
+        "Out_IsDoc_Downloaded"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_AddNote.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "In_NoteBodyContent"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Workflows/Hoowla_Settings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CaseClosed&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stars LMS Workflows/Update Completion date_StarLMS.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CompleteTask_Exist&Sequence_82",
+        "Is_CompleteTask_Exist&Sequence_78",
+        "Is_CompleteTask_Exist&Sequence_76",
+        "Is_CompleteTask_Exist&Sequence_54",
+        "Is_CompleteTask_Exist&Sequence_34",
+        "Is_CompleteTask_Exist&Sequence_35",
+        "Is_CompleteTask_Exist&Sequence_36",
+        "SendHK_Counter&Sequence_1",
+        "Task_Row&Sequence_1",
+        "Status_Row&Sequence_1",
+        "CasePlan_DT&Sequence_1",
+        "CaseOpened&Sequence_1",
+        "HWcompletionDate1&Sequence_1",
+        "Task_Counter&Sequence_3",
+        "CasePlan_Str&Sequence_3",
+        "StarLMS_RefNum&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "HWcompletionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stars LMS Workflows/Upload ComplettionDoc _StarsLMS.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "In_CompletionDoc_Path"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Stars LMS Workflows/StarsLMS_Upload Case Document.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_StarsLMS_Address&Sequence_5",
+        "Is_CaseExist&Sequence_2",
+        "Hoowla_Post_Splt2&Sequence_2",
+        "Hoowla_Post_Splt1&Sequence_2",
+        "Is_UpCase_Exist&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_Bool_StarsProcess_Complete",
+        "In_CompletionDoc_Path",
+        "In_Hoowla_Postcode"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook_EmailAutomation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InputFile_DT&Sequence_1",
+        "Ui_Out&Sequence_4",
+        "Case_Url&Sequence_4",
+        "Mail_Id&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".local/ActivityTestBench/Bench_0.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LMS Workflows/LMS Conveyencer_Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LMS_Uibrowser_out&Sequence_1",
+        "Bool_DetailsValidated&Sequence_1",
+        "Is_LMS_caseOpened&Sequence_2",
+        "Str_getLMSCaseDetails&Sequence_3",
+        "Str_Lms_ClientDetails&Sequence_5",
+        "Str_Lms_ConveyedAddress&Sequence_5",
+        "Str_LmsCaseNumber&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_ConveyedPostcode",
+        "In_CompleDoc_ProprietorName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ServerIP&Sequence_16",
+        "AHT_DT&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "TriggerBy&Sequence_1",
+        "License&Sequence_1",
+        "BotName&Sequence_1",
+        "ProcessName&Sequence_1",
+        "StartTime_DT&Sequence_1",
+        "EndTime_DT&Sequence_1",
+        "EndTIme&Sequence_1",
+        "StartTime&Sequence_1",
+        "Is_CaseOpened&Sequence_1",
+        "DT_Postcode&Sequence_1",
+        "DT_Address&Sequence_1",
+        "DT_ClientName&Sequence_1",
+        "DT_LMSRefNum&Sequence_1",
+        "DT_Counter&Sequence_1",
+        "Final_InputDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Comment_BE",
+        "CaseStatus",
+        "Out_HoowlaCaseNum",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_LMSout&Sequence_9",
+        "BuildHeaders_FR&Sequence_11",
+        "DateBuildDT&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "Hoowla_URL",
+        "UserName",
+        "Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HoowlaSignin_Pg&Sequence_13",
+        "HoowlaSignin_Pg&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "UserName",
+        "Password",
+        "Is_HoowlaLogin",
+        "Hoowla_URL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla_Postcode_Search.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ClientOne&Sequence_1",
+        "ClientTwo&Sequence_1",
+        "LexCustomerA&TryCatch_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "PropertyPostcode",
+        "LexProperty",
+        "LexCustomer",
+        "Out_HoowlaCase",
+        "Out_HoowlaLPLname",
+        "Out_AddWrokflowEXIST"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "client validation hoowla.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractedhoowlaclientData&Sequence_1",
+        "outdata1&Sequence_1",
+        "clientrowcounter&Sequence_1",
+        "elementcasecounter&Sequence_1",
+        "clientoneFTname&Sequence_1",
+        "ClientoneMDname&Sequence_1",
+        "ClientoneLTname&Sequence_1",
+        "clienttwoFTname&Sequence_1",
+        "clienttwoMDname&Sequence_1",
+        "clienttwoLTname&Sequence_1",
+        "hoowlasearchclient&Sequence_6",
+        "hoowlasearchAddress&Sequence_6",
+        "HoowlaRowExist&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_lmssernumber",
+        "Clientone",
+        "ClientTwo",
+        "Out_LMSpostcode",
+        "Conveyedaddress",
+        "Hoowlacaseopened"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Update LMS reference.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_CaseDataExist&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Comment_BE",
+        "CaseStatus",
+        "LMSreference"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla Home page.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

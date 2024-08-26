@@ -1,0 +1,242 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Extracting_Cases" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="818.4,1412" sap2010:WorkflowViewState.IdRef="Extracting_Cases_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Extracting_Cases" sap:VirtualizedContainerService.HintSize="644.8,1347.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Hoowla Dashboard'" sap:VirtualizedContainerService.HintSize="582.4,1235.2" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="bbe269582786a02f391a734a16169b2c" Selector="&lt;html app='chrome.exe' title='*Hoowla' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548.8,1088" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Click Hide-Try Catch" sap:VirtualizedContainerService.HintSize="486.4,632.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <Sequence sap:VirtualizedContainerService.HintSize="449.6,401.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'HIDE'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d147378d-35bd-4a12-b2db-a1f6bf033eda" InformativeScreenshot="05d3a0ee67807c98825bbb4799d1ca75" Selector="&lt;webctrl aaname='Hide' tag='A' parentclass='reminderbox reminder' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:LogMessage DisplayName="Hide-Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;unable to click Remainder box 'HIDE' &quot;]" />
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="452.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Hide-Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;unable to click Remainder box 'HIDE' &quot;]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'DIARY'" sap:VirtualizedContainerService.HintSize="486.4,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2404ad64-7f77-41d5-be8e-d5481110e51f" InformativeScreenshot="acbf7a592c83d1832d316b9de2e5fcea" Selector="&lt;webctrl aaname='Diary' tag='A' parentclass='header-links' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="2000" DisplayName="Select Item 'SELECT  diary_user_view'" sap:VirtualizedContainerService.HintSize="486.4,156" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="clientservices@lpropertylawyers.co.uk">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>Armin Pishro  –  apishro@lpropertylawyers.co.uk</x:String>
+                  <x:String>Archive  –  archive@lpropertylawyers.co.uk</x:String>
+                  <x:String>Ashley Saltibus  –  asaltibus@lpropertylawyers.co.uk</x:String>
+                  <x:String>Annette Catherine Stringwell  –  astringwell@lpropertylawyers.co.uk</x:String>
+                  <x:String>Amy Sutton  –  asutton@lpropertylawyers.co.uk</x:String>
+                  <x:String>Angela Taylor  –  ataylor@lpropertylawyers.co.uk</x:String>
+                  <x:String>Andrew Tinsley  –  atinsley@lpropertylawyers.co.uk</x:String>
+                  <x:String>Awaiting Mortgage Offer  –  awaitmortgageoffer@lpropertylawyers.co.uk</x:String>
+                  <x:String>Aled Wynne-Williams  –  awynne-williams@lpropertylawyers.co.uk</x:String>
+                  <x:String>Bradley Colburn  –  bcolburn@lpropertylawyers.co.uk</x:String>
+                  <x:String>Bradley Hayes  –  bhayes@lpropertylawyers.co.uk</x:String>
+                  <x:String>BLUE TEAM  –  blueteam@lpropertylawyers.co.uk</x:String>
+                  <x:String>Bence Zorenyi  –  bzorenyi@lpropertylawyers.co.uk</x:String>
+                  <x:String>caseauthorisations@lpropertylawyers.co.uk</x:String>
+                  <x:String>Claire Barnes  –  cbarnes@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlene Brooking  –  cbrooking@lpropertylawyers.co.uk</x:String>
+                  <x:String>Christina Bunting  –  cbunting@lpropertylawyers.co.uk</x:String>
+                  <x:String>Christopher Courtenay  –  ccourtenay@lpropertylawyers.co.uk</x:String>
+                  <x:String>Chloe Cuniffe  –  ccuniffe@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlotte Fielden  –  cfielden@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlene Hickman  –  chickman@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlotte Higgins  –  chiggins@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charley Hutchinson  –  chutchinson@lpropertylawyers.co.uk</x:String>
+                  <x:String>Connor Kelly  –  ckelly@lpropertylawyers.co.uk</x:String>
+                  <x:String>clientservices@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlotte Massey  –  cmassey@lpropertylawyers.co.uk</x:String>
+                  <x:String>Clare Miller  –  cmiller@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charleigh Mollins  –  cmollins@lpropertylawyers.co.uk</x:String>
+                  <x:String>Cynthia Moyo  –  cmoyo@lpropertylawyers.co.uk</x:String>
+                  <x:String>Completion Pack  –  completionpack@lpropertylawyers.co.uk</x:String>
+                  <x:String>Completion Registrations  –  completionregistrations@lpropertylawyers.co.uk</x:String>
+                  <x:String>cots@lpropertylawyers.co.uk</x:String>
+                  <x:String>Chloe Shepherd  –  cshepherd@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlotte Vining  –  cvining@lpropertylawyers.co.uk</x:String>
+                  <x:String>Charlie Wood  –  cwood@lpropertylawyers.co.uk</x:String>
+                  <x:String>Danielle Baxter  –  dbaxter@lpropertylawyers.co.uk</x:String>
+                  <x:String>Daisy Champion  –  dchampion@lpropertylawyers.co.uk</x:String>
+                  <x:String>Daniel Gardner  –  dgardner@lpropertylawyers.co.uk</x:String>
+                  <x:String>Dane Hughes  –  dhughes@lpropertylawyers.co.uk</x:String>
+                  <x:String>Discharges &amp; LR  –  discharges&amp;lr@lpropertylawyers.co.uk</x:String>
+                  <x:String>dmann@lan.co.uk</x:String>
+                  <x:String>Daniel Parr  –  dparr@lpropertylawyers.co.uk</x:String>
+                  <x:String>Daniel Smith  –  dsmith@lpropertylawyers.co.uk</x:String>
+                  <x:String>Emmanuel Alabi  –  ealabi@lpropertylawyers.co.uk</x:String>
+                  <x:String>Emily Dunne  –  edunne@lpropertylawyers.co.uk</x:String>
+                  <x:String>Erin Hargreaves  –  ehargreaves@lpropertylawyers.co.uk</x:String>
+                  <x:String>Edward Leech  –  eleech@lpropertylawyers.co.uk</x:String>
+                  <x:String>Elizabeth Lyon  –  elyon@lpropertylawyers.co.uk</x:String>
+                  <x:String>Elaise Nassana  –  enassana@lpropertylawyers.co.uk</x:String>
+                  <x:String>Eleanor Ng  –  eng@lpropertylawyers.co.uk</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7a08870a-1e90-49b6-b490-7e2689c752eb" InformativeScreenshot="f7928bf34396805121e53f47f9e366bc" Selector="&lt;webctrl id='diary_user_view' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

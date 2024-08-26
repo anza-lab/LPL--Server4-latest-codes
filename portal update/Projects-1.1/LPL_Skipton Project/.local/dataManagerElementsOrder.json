@@ -1,0 +1,330 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "StatusTracker_DT&StateMachine_1",
+        "Statustrackerpath&StateMachine_1",
+        "StartTime&StateMachine_1",
+        "EndTime&StateMachine_1",
+        "StatusRowIndex&StateMachine_1",
+        "Start_Time&StateMachine_1",
+        "ShouldStop&Sequence_25",
+        "StarttimeDate&Sequence_37",
+        "TimeDiff&Sequence_37",
+        "End_Time&Sequence_39",
+        "TimeDiff&Sequence_42",
+        "AHT&Sequence_42"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ReportPath",
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "GetQ_OldData&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "Hoowla_Username",
+        "Hoowla_Password",
+        "InputFileDT",
+        "Skipton_Username",
+        "Skipton_Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla codes/Hoowla_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Is_HoowlaLogin",
+        "HoowlaUserName",
+        "HWPassword",
+        "HoowlaPassword",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InputFile_FilePaths.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Is_FRfile_Exist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "CaseID",
+        "InputMovinDT",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MovinLG_Performer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HWclient2&Flowchart_1",
+        "MoveNXTProcess&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "MLCaseRef",
+        "Is_MLCaseOpened",
+        "HWPropertyAddress",
+        "HWclient1",
+        "FInalCompletionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla codes/Hoowla Case Opening.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ComplDateA&Sequence_1",
+        "BuyerSide_Client&Sequence_7",
+        "PeopleInvolvedList&Sequence_1",
+        "Is_CaseOpened&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "HoowlaPostcode",
+        "IO_StatusTracker_DT",
+        "StatusIndexRow",
+        "HWPropertyAddress",
+        "FInalCompletionDate",
+        "MoveNxtProcess",
+        "HWclient2",
+        "HWclient1",
+        "Hoowla_CaseID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "CaseID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Portals Singout.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SkiptonBS Codes/Skipton business Society Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Skipton_Password",
+        "Skipton_Username",
+        "Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LPL_SkiptonBS_Performer.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MoveNXTProcess&Flowchart_1",
+        "HWclient2&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FInalCompletionDate",
+        "HWclient1",
+        "HWPropertyAddress",
+        "MLCaseRef",
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "Hoowla_CaseID",
+        "HoowlaPostcode",
+        "Is_SBSCaseOpened"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SkiptonBS Codes/Open_SkiptonBS_Case.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "HWaddressSplit1&Sequence_10",
+        "SkiptonCaseList_Str&Sequence_2",
+        "SkiptonCaseList_DT&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "IO_StatusTracker_DT",
+        "StatusRowIndex",
+        "HoowlaPostcode",
+        "HWclient1",
+        "Hwclient2",
+        "HWpropertyAddress",
+        "SBS_ClientName",
+        "SBS_Postcode",
+        "SBS_Address",
+        "SBS_Conveyancer",
+        "Is_SBSCaseOpened"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SkiptonBS Codes/SkiptonBS_Milstone updation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MilestoneList_DT&Sequence_1",
+        "MilestonCount&Sequence_1",
+        "MilestoneDT_Str&Sequence_2",
+        "Milestone_Name&Sequence_5",
+        "Completed_Date&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "HWcompletionDate",
+        "IO_StatusTracker_DT",
+        "StatusRowIndex"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ComplDateA&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SkiptonBS Codes/Skipton building Society Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Config",
+        "Skipton_Username",
+        "Skipton_Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LPL_SkiptonBS HomePages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

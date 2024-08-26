@@ -1,0 +1,165 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Portals_Singout" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,1532.8" sap2010:WorkflowViewState.IdRef="Portals_Singout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Portals_Singout" sap:VirtualizedContainerService.HintSize="545.6,1468" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Closing Hoowla portal&quot;]" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Hoowla signout'" sap:VirtualizedContainerService.HintSize="483.2,471.2" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="b6a96c7159d08295cd441409fb816539" Selector="&lt;html app='chrome.exe' title='*Hoowla' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,284" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'Sign out'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb53a96b-190e-44ad-9b71-7a5abc04c345" InformativeScreenshot="fb83c02e9b82af6713367187c79eccb4" Selector="&lt;webctrl aaname='Sign out' tag='A' parentclass='profile-card-inner' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BrowserScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Closing Stars LMS portal&quot;]" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  Stars LMS'" sap:VirtualizedContainerService.HintSize="483.2,480" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="0a466940924f29ca532f73e4c40d766b" Selector="&lt;html app='chrome.exe' title='*LMS*STARS*' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,332.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click Image 'LOG OFF'" sap:VirtualizedContainerService.HintSize="387.2,156" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:ClickImage.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickImage.CursorPosition>
+              <ui:ClickImage.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+              </ui:ClickImage.Image>
+              <ui:ClickImage.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9a61a67a-e285-47f6-bf33-069c1560f1a2">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ClickImage.Target>
+            </ui:ClickImage>
+            <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="CloseTab_2" />
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

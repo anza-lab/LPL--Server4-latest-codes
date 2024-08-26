@@ -1,0 +1,501 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Hoowla_Settings" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1408.8,2548.8" sap2010:WorkflowViewState.IdRef="Hoowla_Settings_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Hoowla_Settings" sap:VirtualizedContainerService.HintSize="618.4,2444" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Hoowla'" sap:VirtualizedContainerService.HintSize="556,2355.2" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="9e2844ceb5e289f6bc7aef8f4f4f8d67" Selector="&lt;html app='chrome.exe' title='*Hoowla*' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522.4,2144.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="Is_CaseClosed" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click 'Back to case main page.'" sap:VirtualizedContainerService.HintSize="460,139.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1df80ca-98fa-4b8e-9e7a-0b82fb6995d4" InformativeScreenshot="00ae7caab96b45fd0001412cc66475aa" Selector="&lt;webctrl tag='A' parentclass='page-title breadcrumb' idx='3' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SetFocus DelayBefore="{x:Null}" ContinueOnError="True" DelayMS="1000" DisplayName="Set Focus 'Settings'" sap:VirtualizedContainerService.HintSize="460,139.2" sap2010:WorkflowViewState.IdRef="SetFocus_1">
+              <ui:SetFocus.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a180b6bc-6936-42de-b800-e5fd410a5ba4" InformativeScreenshot="d839eb80694bc7793352c8e92f9dfe0f" Selector="&lt;webctrl aaname='*Settings*' parentclass='dashboard-box list-box control-panel ignore-last-item-border' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:SetFocus.Target>
+            </ui:SetFocus>
+            <ui:UiElementExists DisplayName="Element Exists 'Reopen this case'" Exists="[Is_CaseClosed]" sap:VirtualizedContainerService.HintSize="460,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cab1012c-8cb7-43ce-a14e-616ff434e612" InformativeScreenshot="6e7ec9003380654ab39117f79ed08394" Selector="&lt;webctrl aaname='*Reopen this Case*' parentclass='dashboard-box list-box control-panel ignore-last-item-border' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <If Condition="[Is_CaseClosed]" sap:VirtualizedContainerService.HintSize="460,644" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,219.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'button Reopen this case'" sap:VirtualizedContainerService.HintSize="353.6,130.4" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e9cee8b5-501b-4aab-b579-4c6b3be26cb4" InformativeScreenshot="64e324407a2b853f278985ba8b2debbc" Selector="&lt;webctrl aaname='*Reopen this Case*' parentclass='dashboard-box list-box control-panel ignore-last-item-border' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,254.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Hoowla case alreadyopened  - Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Case is already opened&quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" sap:VirtualizedContainerService.HintSize="460,139.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f49df826-bde9-4524-bd5d-8b33895aa191" InformativeScreenshot="15d7f56f795ff17b1318d6631ef05d97" Selector="&lt;webctrl aaname='*Settings*' parentclass='dashboard-box list-box control-panel ignore-last-item-border' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="1000" DisplayName="Select Item 'Fee Earner for case - Archive@lproperty'" sap:VirtualizedContainerService.HintSize="460,188" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="Archive  –  archive@leadingpropertylawyers.co.uk  –  LPL">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>abeyance@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Accounts  –  accounts@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Antony Clements  –  aclements@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Alice Francisco  –  afrancisco@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Angela Hall  –  ahall@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Alessandro Kerrigan  –  akerrigan@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>akhan@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Ali Mahmood  –  amahmood@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Amy Orchard  –  aorchard@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Archive  –  archive@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Amy Sutton  –  asutton@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Awaiting Mortgage Offer  –  awaitmortgageoffer@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>BLUE TEAM  –  blueteam@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Bence Zorenyi  –  bzorenyi@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>caseauthorisations@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlotte Fielden  –  cfielden@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlene Hickman  –  chickman@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charley Hutchinson  –  chutchinson@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Connor Kelly  –  ckelly@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>clientservices@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Clare Miller  –  cmiller@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charleigh Mollins  –  cmollins@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Cynthia Moyo  –  cmoyo@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Completion Pack  –  completionpack@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Completion Registrations  –  completionregistrations@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Chanel Peralta  –  cperalta@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlotte Vining  –  cvining@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlie Wood  –  cwood@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Danielle Baxter  –  dbaxter@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Daniel Gardner  –  dgardner@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>David Hesse  –  dhesse@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Dane Hughes  –  dhughes@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Discharges &amp; LR  –  discharges&amp;lr@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>dmann@lan.co.uk  –  LPL</x:String>
+                  <x:String>David Platten  –  dplatten@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Elliot Clarence  –  eclarence@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Emily Dunne  –  edunne@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Erin Hargreaves  –  ehargreaves@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Edward Leech  –  eleech@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Elizabeth Lyon  –  elyon@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Eleanor Ng  –  eng@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>First Registrations  –  firstregistrations@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Fiaz Khalid  –  fkhalid@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Francis Parratt  –  fparratt@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>George Bokuchava  –  gbokuchava@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gemma Calcott  –  gcalcott@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gina Fryer  –  gfryer@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gabriela Goscimska  –  ggoscimska@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Greg Ives  –  gives@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gini Katirai  –  gkatirai@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e583954f-956d-4eb5-8c10-03af2fd66090" InformativeScreenshot="2607831d47cd9e9d54c9a97c3cb8a6d4" Selector="&lt;webctrl id='fee-earner' tag='SELECT' name='fee_earner' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="460,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="424.8,456" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="1000" DisplayName="Select Item 'Fee Earner for case - Archive@lproperty'" sap:VirtualizedContainerService.HintSize="362.4,188" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Accounts  –  accounts@lpropertylawyers.co.uk  –  LPL">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="50">
+                        <x:String>abeyance@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Accounts  –  accounts@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Antony Clements  –  aclements@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Alice Francisco  –  afrancisco@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>akhan@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Amy Orchard  –  aorchard@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Archive  –  archive@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Amy Sutton  –  asutton@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Awaiting Mortgage Offer  –  awaitmortgageoffer@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>BLUE TEAM  –  blueteam@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Bence Zorenyi  –  bzorenyi@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>caseauthorisations@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlotte Fielden  –  cfielden@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlene Hickman  –  chickman@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charley Hutchinson  –  chutchinson@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Connor Kelly  –  ckelly@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>clientservices@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Clare Miller  –  cmiller@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charleigh Mollins  –  cmollins@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Cynthia Moyo  –  cmoyo@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Completion Pack  –  completionpack@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Completion Registrations  –  completionregistrations@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlotte Vining  –  cvining@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlie Wood  –  cwood@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Danielle Baxter  –  dbaxter@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Daniel Gardner  –  dgardner@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>David Hesse  –  dhesse@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Dane Hughes  –  dhughes@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Discharges &amp; LR  –  discharges&amp;lr@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>dmann@lan.co.uk  –  LPL</x:String>
+                        <x:String>Daniel Parr  –  dparr@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Emily Dunne  –  edunne@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Erin Hargreaves  –  ehargreaves@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Edward Leech  –  eleech@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Elizabeth Lyon  –  elyon@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Eleanor Ng  –  eng@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>First Registrations  –  firstregistrations@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Fiaz Khalid  –  fkhalid@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>George Bokuchava  –  gbokuchava@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gemma Calcott  –  gcalcott@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gina Fryer  –  gfryer@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gabriela Goscimska  –  ggoscimska@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gini Katirai  –  gkatirai@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>GREEN TEAM  –  greenteam@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Hassan Ali  –  hali@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Halima Nasir  –  hnasir@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Holiday Calander  –  holidaycalander@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Indiah Harrison-Taylor  –  iharrison-taylor@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Irene Moran  –  imoran@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Indemnity Policies  –  indemnities@lpropertylawyers.co.uk  –  LPL</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0931789e-9b47-4499-96fb-236abc76c598" InformativeScreenshot="20ab1563b3014462ce13d6180e5380e1" Selector="&lt;webctrl id='fee-earner' tag='SELECT' name='fee_earner' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="1000" DisplayName="Select Item 'case-worker - Archive@lproperty'" sap:VirtualizedContainerService.HintSize="362.4,179.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="Archive  –  archive@lpropertylawyers.co.uk  –  LPL">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="50">
+                        <x:String>None</x:String>
+                        <x:String>abeyance@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Accounts  –  accounts@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Antony Clements  –  aclements@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Alice Francisco  –  afrancisco@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>akhan@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Amy Orchard  –  aorchard@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Archive  –  archive@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Amy Sutton  –  asutton@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Awaiting Mortgage Offer  –  awaitmortgageoffer@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>BLUE TEAM  –  blueteam@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Bence Zorenyi  –  bzorenyi@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>caseauthorisations@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlotte Fielden  –  cfielden@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlene Hickman  –  chickman@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charley Hutchinson  –  chutchinson@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Connor Kelly  –  ckelly@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>clientservices@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Clare Miller  –  cmiller@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charleigh Mollins  –  cmollins@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Cynthia Moyo  –  cmoyo@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Completion Pack  –  completionpack@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Completion Registrations  –  completionregistrations@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlotte Vining  –  cvining@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Charlie Wood  –  cwood@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Danielle Baxter  –  dbaxter@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Daniel Gardner  –  dgardner@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>David Hesse  –  dhesse@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Dane Hughes  –  dhughes@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Discharges &amp; LR  –  discharges&amp;lr@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>dmann@lan.co.uk  –  LPL</x:String>
+                        <x:String>Daniel Parr  –  dparr@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Emily Dunne  –  edunne@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Erin Hargreaves  –  ehargreaves@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Edward Leech  –  eleech@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Elizabeth Lyon  –  elyon@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Eleanor Ng  –  eng@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>First Registrations  –  firstregistrations@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Fiaz Khalid  –  fkhalid@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>George Bokuchava  –  gbokuchava@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gemma Calcott  –  gcalcott@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gina Fryer  –  gfryer@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gabriela Goscimska  –  ggoscimska@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Gini Katirai  –  gkatirai@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>GREEN TEAM  –  greenteam@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Hassan Ali  –  hali@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Halima Nasir  –  hnasir@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Holiday Calander  –  holidaycalander@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Indiah Harrison-Taylor  –  iharrison-taylor@lpropertylawyers.co.uk  –  LPL</x:String>
+                        <x:String>Irene Moran  –  imoran@lpropertylawyers.co.uk  –  LPL</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="935b68f0-f15e-4592-b57f-a96fe2043ece" InformativeScreenshot="e9994232ce4a466ed0265db1cd984648" Selector="&lt;webctrl id='case-worker' tag='SELECT' name='case_worker' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="1000" DisplayName="Select Item 'case-worker - Archive@lproperty'" sap:VirtualizedContainerService.HintSize="460,188" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="Archive  –  archive@leadingpropertylawyers.co.uk  –  LPL">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>None</x:String>
+                  <x:String>abeyance@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Accounts  –  accounts@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Antony Clements  –  aclements@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Alice Francisco  –  afrancisco@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Angela Hall  –  ahall@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Alessandro Kerrigan  –  akerrigan@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>akhan@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Ali Mahmood  –  amahmood@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Amy Orchard  –  aorchard@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Archive  –  archive@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Amy Sutton  –  asutton@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Awaiting Mortgage Offer  –  awaitmortgageoffer@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>BLUE TEAM  –  blueteam@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Bence Zorenyi  –  bzorenyi@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>caseauthorisations@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlotte Fielden  –  cfielden@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlene Hickman  –  chickman@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charley Hutchinson  –  chutchinson@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Connor Kelly  –  ckelly@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>clientservices@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Clare Miller  –  cmiller@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charleigh Mollins  –  cmollins@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Cynthia Moyo  –  cmoyo@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Completion Pack  –  completionpack@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Completion Registrations  –  completionregistrations@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Chanel Peralta  –  cperalta@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlotte Vining  –  cvining@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Charlie Wood  –  cwood@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Danielle Baxter  –  dbaxter@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Daniel Gardner  –  dgardner@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>David Hesse  –  dhesse@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Dane Hughes  –  dhughes@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Discharges &amp; LR  –  discharges&amp;lr@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>dmann@lan.co.uk  –  LPL</x:String>
+                  <x:String>David Platten  –  dplatten@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Elliot Clarence  –  eclarence@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Emily Dunne  –  edunne@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Erin Hargreaves  –  ehargreaves@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Edward Leech  –  eleech@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Elizabeth Lyon  –  elyon@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Eleanor Ng  –  eng@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>First Registrations  –  firstregistrations@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Fiaz Khalid  –  fkhalid@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Francis Parratt  –  fparratt@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>George Bokuchava  –  gbokuchava@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gemma Calcott  –  gcalcott@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gina Fryer  –  gfryer@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Gabriela Goscimska  –  ggoscimska@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                  <x:String>Greg Ives  –  gives@leadingpropertylawyers.co.uk  –  LPL</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e249a258-7783-4e0e-8a8d-fc7d9db79989" InformativeScreenshot="68e2269c2e0e81fb96cc6b9ad01791c8" Selector="&lt;webctrl id='case-worker' tag='SELECT' name='case_worker' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="460,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Bot changed changed Setting, clicking Save button.&quot;]" />
+            <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Save - Set Focus" sap:VirtualizedContainerService.HintSize="460,118.4" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+              <ui:SetFocus.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db001c04-63f2-4873-97f0-6c62f8d1c661" Selector="&lt;webctrl innertext='*Save*' parentclass='align-center' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SetFocus.Target>
+            </ui:SetFocus>
+            <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="3000" DelayMS="1000" DisplayName="Click 'SAVE'" sap:VirtualizedContainerService.HintSize="450,130" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="184cb25b-9668-487c-b8c8-30bba38c9b4e" InformativeScreenshot="6c5ca0185ea174912643324e29c60f55" Selector="&lt;webctrl innertext='*Save*' parentclass='align-center' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

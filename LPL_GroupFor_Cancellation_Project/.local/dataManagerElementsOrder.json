@@ -1,0 +1,93 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Case_Status&Sequence_1",
+        "ExtractDataTable&Sequence_6",
+        "Is_MessageEnabled&Sequence_6",
+        "Config&Sequence_1",
+        "FinalReport_Path&Sequence_1",
+        "Comment_BE&Sequence_1",
+        "Row_Index&Sequence_1",
+        "Input_Dt&Sequence_2",
+        "Desktop_Path&Sequence_2",
+        "FinalReportPath_Exist&Sequence_2",
+        "TempletePath&Sequence_2",
+        "Tracker_Status_DT&Sequence_2",
+        "CaseReference&Sequence_5",
+        "Hoowla_UI&Sequence_5",
+        "Case_StartTime&Sequence_5",
+        "Case_EndTIme&Sequence_5",
+        "AHT&Sequence_5",
+        "Bot_runSTatus&Sequence_5",
+        "Sys_Exception&TryCatch_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Hoowla_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Hoowla_Url&Sequence_1",
+        "Hoowla_passwordA&Sequence_1",
+        "Is_Hoowla_LoggedIn&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Config",
+        "Hoowla_Username",
+        "Hoowla_Password"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GroupsFor_Text_Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bool_TextExists&Sequence_9",
+        "str_Text&Sequence_9",
+        "bool_TextMessage&Sequence_1",
+        "str_TextMessage&Sequence_1",
+        "Text_Message&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "Is_Change_caseStatusExist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Case_Status",
+        "str_BusinessExce",
+        "Tracker_Status_DT",
+        "In_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
