@@ -311,10 +311,10 @@
       ],
       "ArgumentsSectionElementsOrder": [
         "Is_CasesListExist",
+        "HWclient1",
         "HWclient1_FLName",
         "HWclient2",
         "HWclient2_FLName",
-        "HWclient1",
         "Is_MLCaseOpened",
         "MLCaseRef",
         "HWPropertyAddress",

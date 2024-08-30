@@ -15,12 +15,28 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
-        /// Invokes the Framework/RetryCurrentTransaction.xaml
+        /// Invokes the Tests/MainTestCase.xaml
         /// </summary>
-        public (int io_RetryNumber, int io_TransactionNumber) RetryCurrentTransaction(System.Collections.Generic.Dictionary<string, object> in_Config, System.Exception in_SystemException, bool in_QueueRetry, int io_RetryNumber, int io_TransactionNumber)
+        public void MainTestCase()
         {
-            var result = _runWorkflowHandler(@"Framework\RetryCurrentTransaction.xaml", new Dictionary<string, object>{{"in_Config", in_Config}, {"in_SystemException", in_SystemException}, {"in_QueueRetry", in_QueueRetry}, {"io_RetryNumber", io_RetryNumber}, {"io_TransactionNumber", io_TransactionNumber}}, default, default, default);
-            return ((int)result["io_RetryNumber"], (int)result["io_TransactionNumber"]);
+            var result = _runWorkflowHandler(@"Tests\MainTestCase.xaml", new Dictionary<string, object>{}, default, default, default);
+        }
+
+        /// <summary>
+        /// Invokes the LPL_ChasingContracts_PublicNote/test.xaml
+        /// </summary>
+        public void test()
+        {
+            var result = _runWorkflowHandler(@"LPL_ChasingContracts_PublicNote\test.xaml", new Dictionary<string, object>{}, default, default, default);
+        }
+
+        /// <summary>
+        /// Invokes the Framework/TakeScreenshot.xaml
+        /// </summary>
+        public string TakeScreenshot(string in_Folder, string io_FilePath)
+        {
+            var result = _runWorkflowHandler(@"Framework\TakeScreenshot.xaml", new Dictionary<string, object>{{"in_Folder", in_Folder}, {"io_FilePath", io_FilePath}}, default, default, default);
+            return (string)result["io_FilePath"];
         }
 
         /// <summary>
@@ -32,27 +48,11 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
-        /// Invokes the Test1.xaml
+        /// Invokes the Main.xaml
         /// </summary>
-        public void Test1()
+        public void Main(string in_OrchestratorQueueName, string in_OrchestratorQueueFolder)
         {
-            var result = _runWorkflowHandler(@"Test1.xaml", new Dictionary<string, object>{}, default, default, default);
-        }
-
-        /// <summary>
-        /// Invokes the Read_InputExcel.xaml
-        /// </summary>
-        public void Read_InputExcel(System.Collections.Generic.Dictionary<string, object> Config)
-        {
-            var result = _runWorkflowHandler(@"Read_InputExcel.xaml", new Dictionary<string, object>{{"Config", Config}}, default, default, default);
-        }
-
-        /// <summary>
-        /// Invokes the Home pages.xaml
-        /// </summary>
-        public void Home_pages()
-        {
-            var result = _runWorkflowHandler(@"Home pages.xaml", new Dictionary<string, object>{}, default, default, default);
+            var result = _runWorkflowHandler(@"Main.xaml", new Dictionary<string, object>{{"in_OrchestratorQueueName", in_OrchestratorQueueName}, {"in_OrchestratorQueueFolder", in_OrchestratorQueueFolder}}, default, default, default);
         }
 
         /// <summary>
@@ -72,36 +72,30 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
-        /// Invokes the Tests/InitAllApplicationsTestCase.xaml
+        /// Invokes the Framework/SetTransactionStatus.xaml
         /// </summary>
-        public void InitAllApplicationsTestCase()
+        public (int io_RetryNumber, int io_TransactionNumber, int io_ConsecutiveSystemExceptions) SetTransactionStatus(UiPath.Core.BusinessRuleException in_BusinessException, string in_TransactionField1, string in_TransactionField2, string in_TransactionID, System.Exception in_SystemException, System.Collections.Generic.Dictionary<string, object> in_Config, UiPath.Core.QueueItem in_TransactionItem, int io_RetryNumber, int io_TransactionNumber, int io_ConsecutiveSystemExceptions)
         {
-            var result = _runWorkflowHandler(@"Tests\InitAllApplicationsTestCase.xaml", new Dictionary<string, object>{}, default, default, default);
+            var result = _runWorkflowHandler(@"Framework\SetTransactionStatus.xaml", new Dictionary<string, object>{{"in_BusinessException", in_BusinessException}, {"in_TransactionField1", in_TransactionField1}, {"in_TransactionField2", in_TransactionField2}, {"in_TransactionID", in_TransactionID}, {"in_SystemException", in_SystemException}, {"in_Config", in_Config}, {"in_TransactionItem", in_TransactionItem}, {"io_RetryNumber", io_RetryNumber}, {"io_TransactionNumber", io_TransactionNumber}, {"io_ConsecutiveSystemExceptions", io_ConsecutiveSystemExceptions}}, default, default, default);
+            return ((int)result["io_RetryNumber"], (int)result["io_TransactionNumber"], (int)result["io_ConsecutiveSystemExceptions"]);
         }
 
         /// <summary>
-        /// Invokes the LPL_ChasingContracts_PublicNote/ChasingContract_PublicNotes.xaml
+        /// Invokes the Framework/InitAllSettings.xaml
         /// </summary>
-        public void ChasingContract_PublicNotes()
+        public System.Collections.Generic.Dictionary<string, object> InitAllSettings(string in_ConfigFile, string[] in_ConfigSheets)
         {
-            var result = _runWorkflowHandler(@"LPL_ChasingContracts_PublicNote\ChasingContract_PublicNotes.xaml", new Dictionary<string, object>{}, default, default, default);
+            var result = _runWorkflowHandler(@"Framework\InitAllSettings.xaml", new Dictionary<string, object>{{"in_ConfigFile", in_ConfigFile}, {"in_ConfigSheets", in_ConfigSheets}}, default, default, default);
+            return (System.Collections.Generic.Dictionary<string, object>)result["out_Config"];
         }
 
         /// <summary>
-        /// Invokes the Framework/Process.xaml
+        /// Invokes the Title_Check.xaml
         /// </summary>
-        public void Process(UiPath.Core.QueueItem in_TransactionItem, System.Collections.Generic.Dictionary<string, object> in_Config, string In_CaseID, int TransactionNumber)
+        public (bool RequestMarkAsIn, bool ContractMarkDone, string GetAddress1, string OtherSolicitor) Title_Check(System.Data.DataTable TODO_Mark, string BreakTriggerScopeInArgument, string GetAddress)
         {
-            var result = _runWorkflowHandler(@"Framework\Process.xaml", new Dictionary<string, object>{{"in_TransactionItem", in_TransactionItem}, {"in_Config", in_Config}, {"In_CaseID", In_CaseID}, {"TransactionNumber", TransactionNumber}}, default, default, default);
-        }
-
-        /// <summary>
-        /// Invokes the Framework/GetTransactionData.xaml
-        /// </summary>
-        public (UiPath.Core.QueueItem out_TransactionItem, string out_TransactionField1, string out_TransactionField2, string out_TransactionID, System.Data.DataTable io_dt_TransactionData) GetTransactionData(int in_TransactionNumber, System.Collections.Generic.Dictionary<string, object> in_Config, System.Data.DataTable io_dt_TransactionData)
-        {
-            var result = _runWorkflowHandler(@"Framework\GetTransactionData.xaml", new Dictionary<string, object>{{"in_TransactionNumber", in_TransactionNumber}, {"in_Config", in_Config}, {"io_dt_TransactionData", io_dt_TransactionData}}, default, default, default);
-            return ((UiPath.Core.QueueItem)result["out_TransactionItem"], (string)result["out_TransactionField1"], (string)result["out_TransactionField2"], (string)result["out_TransactionID"], (System.Data.DataTable)result["io_dt_TransactionData"]);
+            var result = _runWorkflowHandler(@"Title_Check.xaml", new Dictionary<string, object>{{"TODO_Mark", TODO_Mark}, {"BreakTriggerScopeInArgument", BreakTriggerScopeInArgument}, {"GetAddress", GetAddress}}, default, default, default);
+            return ((bool)result["RequestMarkAsIn"], (bool)result["ContractMarkDone"], (string)result["GetAddress1"], (string)result["OtherSolicitor"]);
         }
 
         /// <summary>
@@ -147,46 +141,60 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
-        /// Invokes the LPL_ChasingContracts_PublicNote/test.xaml
+        /// Invokes the Tests/InitAllApplicationsTestCase.xaml
         /// </summary>
-        public void test()
+        public void InitAllApplicationsTestCase()
         {
-            var result = _runWorkflowHandler(@"LPL_ChasingContracts_PublicNote\test.xaml", new Dictionary<string, object>{}, default, default, default);
+            var result = _runWorkflowHandler(@"Tests\InitAllApplicationsTestCase.xaml", new Dictionary<string, object>{}, default, default, default);
         }
 
         /// <summary>
-        /// Invokes the Framework/SetTransactionStatus.xaml
+        /// Invokes the Tests/GetTransactionDataTestCase.xaml
         /// </summary>
-        public (int io_RetryNumber, int io_TransactionNumber, int io_ConsecutiveSystemExceptions) SetTransactionStatus(UiPath.Core.BusinessRuleException in_BusinessException, string in_TransactionField1, string in_TransactionField2, string in_TransactionID, System.Exception in_SystemException, System.Collections.Generic.Dictionary<string, object> in_Config, UiPath.Core.QueueItem in_TransactionItem, int io_RetryNumber, int io_TransactionNumber, int io_ConsecutiveSystemExceptions)
+        public void GetTransactionDataTestCase()
         {
-            var result = _runWorkflowHandler(@"Framework\SetTransactionStatus.xaml", new Dictionary<string, object>{{"in_BusinessException", in_BusinessException}, {"in_TransactionField1", in_TransactionField1}, {"in_TransactionField2", in_TransactionField2}, {"in_TransactionID", in_TransactionID}, {"in_SystemException", in_SystemException}, {"in_Config", in_Config}, {"in_TransactionItem", in_TransactionItem}, {"io_RetryNumber", io_RetryNumber}, {"io_TransactionNumber", io_TransactionNumber}, {"io_ConsecutiveSystemExceptions", io_ConsecutiveSystemExceptions}}, default, default, default);
-            return ((int)result["io_RetryNumber"], (int)result["io_TransactionNumber"], (int)result["io_ConsecutiveSystemExceptions"]);
+            var result = _runWorkflowHandler(@"Tests\GetTransactionDataTestCase.xaml", new Dictionary<string, object>{}, default, default, default);
         }
 
         /// <summary>
-        /// Invokes the Framework/InitAllSettings.xaml
+        /// Invokes the LPL_ChasingContracts_PublicNote/ChasingContract_PublicNotes.xaml
         /// </summary>
-        public System.Collections.Generic.Dictionary<string, object> InitAllSettings(string in_ConfigFile, string[] in_ConfigSheets)
+        public void ChasingContract_PublicNotes()
         {
-            var result = _runWorkflowHandler(@"Framework\InitAllSettings.xaml", new Dictionary<string, object>{{"in_ConfigFile", in_ConfigFile}, {"in_ConfigSheets", in_ConfigSheets}}, default, default, default);
-            return (System.Collections.Generic.Dictionary<string, object>)result["out_Config"];
+            var result = _runWorkflowHandler(@"LPL_ChasingContracts_PublicNote\ChasingContract_PublicNotes.xaml", new Dictionary<string, object>{}, default, default, default);
         }
 
         /// <summary>
-        /// Invokes the Title_Check.xaml
+        /// Invokes the Framework/Process.xaml
         /// </summary>
-        public (bool RequestMarkAsIn, bool ContractMarkDone, string GetAddress1, string OtherSolicitor) Title_Check(System.Data.DataTable TODO_Mark, string BreakTriggerScopeInArgument, string GetAddress)
+        public void Process(UiPath.Core.QueueItem in_TransactionItem, System.Collections.Generic.Dictionary<string, object> in_Config, string In_CaseID, int TransactionNumber)
         {
-            var result = _runWorkflowHandler(@"Title_Check.xaml", new Dictionary<string, object>{{"TODO_Mark", TODO_Mark}, {"BreakTriggerScopeInArgument", BreakTriggerScopeInArgument}, {"GetAddress", GetAddress}}, default, default, default);
-            return ((bool)result["RequestMarkAsIn"], (bool)result["ContractMarkDone"], (string)result["GetAddress1"], (string)result["OtherSolicitor"]);
+            var result = _runWorkflowHandler(@"Framework\Process.xaml", new Dictionary<string, object>{{"in_TransactionItem", in_TransactionItem}, {"in_Config", in_Config}, {"In_CaseID", In_CaseID}, {"TransactionNumber", TransactionNumber}}, default, default, default);
         }
 
         /// <summary>
-        /// Invokes the Main.xaml
+        /// Invokes the Framework/GetTransactionData.xaml
         /// </summary>
-        public void Main(string in_OrchestratorQueueName, string in_OrchestratorQueueFolder)
+        public (UiPath.Core.QueueItem out_TransactionItem, string out_TransactionField1, string out_TransactionField2, string out_TransactionID, System.Data.DataTable io_dt_TransactionData) GetTransactionData(int in_TransactionNumber, System.Collections.Generic.Dictionary<string, object> in_Config, System.Data.DataTable io_dt_TransactionData)
         {
-            var result = _runWorkflowHandler(@"Main.xaml", new Dictionary<string, object>{{"in_OrchestratorQueueName", in_OrchestratorQueueName}, {"in_OrchestratorQueueFolder", in_OrchestratorQueueFolder}}, default, default, default);
+            var result = _runWorkflowHandler(@"Framework\GetTransactionData.xaml", new Dictionary<string, object>{{"in_TransactionNumber", in_TransactionNumber}, {"in_Config", in_Config}, {"io_dt_TransactionData", io_dt_TransactionData}}, default, default, default);
+            return ((UiPath.Core.QueueItem)result["out_TransactionItem"], (string)result["out_TransactionField1"], (string)result["out_TransactionField2"], (string)result["out_TransactionID"], (System.Data.DataTable)result["io_dt_TransactionData"]);
+        }
+
+        /// <summary>
+        /// Invokes the Test1.xaml
+        /// </summary>
+        public void Test1()
+        {
+            var result = _runWorkflowHandler(@"Test1.xaml", new Dictionary<string, object>{}, default, default, default);
+        }
+
+        /// <summary>
+        /// Invokes the Read_InputExcel.xaml
+        /// </summary>
+        public void Read_InputExcel(System.Collections.Generic.Dictionary<string, object> Config)
+        {
+            var result = _runWorkflowHandler(@"Read_InputExcel.xaml", new Dictionary<string, object>{{"Config", Config}}, default, default, default);
         }
 
         /// <summary>
@@ -199,36 +207,20 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
-        /// Invokes the Chasing Contract Milestone.xaml
+        /// Invokes the Amend Document.xaml
         /// </summary>
-        public void Chasing_Contract_Milestone(System.Data.DataTable TODO_Mark, string BreakTriggerScopeInArgument, string GetAddress1, string GetAddress)
+        public void Amend_Document(string In_LastDate)
         {
-            var result = _runWorkflowHandler(@"Chasing Contract Milestone.xaml", new Dictionary<string, object>{{"TODO_Mark", TODO_Mark}, {"BreakTriggerScopeInArgument", BreakTriggerScopeInArgument}, {"GetAddress1", GetAddress1}, {"GetAddress", GetAddress}}, default, default, default);
+            var result = _runWorkflowHandler(@"Amend Document.xaml", new Dictionary<string, object>{{"In_LastDate", In_LastDate}}, default, default, default);
         }
 
         /// <summary>
-        /// Invokes the Tests/MainTestCase.xaml
+        /// Invokes the Framework/RetryCurrentTransaction.xaml
         /// </summary>
-        public void MainTestCase()
+        public (int io_RetryNumber, int io_TransactionNumber) RetryCurrentTransaction(System.Collections.Generic.Dictionary<string, object> in_Config, System.Exception in_SystemException, bool in_QueueRetry, int io_RetryNumber, int io_TransactionNumber)
         {
-            var result = _runWorkflowHandler(@"Tests\MainTestCase.xaml", new Dictionary<string, object>{}, default, default, default);
-        }
-
-        /// <summary>
-        /// Invokes the Tests/GetTransactionDataTestCase.xaml
-        /// </summary>
-        public void GetTransactionDataTestCase()
-        {
-            var result = _runWorkflowHandler(@"Tests\GetTransactionDataTestCase.xaml", new Dictionary<string, object>{}, default, default, default);
-        }
-
-        /// <summary>
-        /// Invokes the Framework/TakeScreenshot.xaml
-        /// </summary>
-        public string TakeScreenshot(string in_Folder, string io_FilePath)
-        {
-            var result = _runWorkflowHandler(@"Framework\TakeScreenshot.xaml", new Dictionary<string, object>{{"in_Folder", in_Folder}, {"io_FilePath", io_FilePath}}, default, default, default);
-            return (string)result["io_FilePath"];
+            var result = _runWorkflowHandler(@"Framework\RetryCurrentTransaction.xaml", new Dictionary<string, object>{{"in_Config", in_Config}, {"in_SystemException", in_SystemException}, {"in_QueueRetry", in_QueueRetry}, {"io_RetryNumber", io_RetryNumber}, {"io_TransactionNumber", io_TransactionNumber}}, default, default, default);
+            return ((int)result["io_RetryNumber"], (int)result["io_TransactionNumber"]);
         }
 
         /// <summary>
@@ -265,6 +257,14 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
+        /// Invokes the Home pages.xaml
+        /// </summary>
+        public void Home_pages()
+        {
+            var result = _runWorkflowHandler(@"Home pages.xaml", new Dictionary<string, object>{}, default, default, default);
+        }
+
+        /// <summary>
         /// Invokes the CheckingSolicitor_Postcode.xaml
         /// </summary>
         public (bool Postcode_Status, string FeeEarner) CheckingSolicitor_Postcode(string SolicitorAddress)
@@ -274,11 +274,11 @@ namespace LPL_ContractChasingProject
         }
 
         /// <summary>
-        /// Invokes the Amend Document.xaml
+        /// Invokes the Chasing Contract Milestone.xaml
         /// </summary>
-        public void Amend_Document(string In_LastDate)
+        public void Chasing_Contract_Milestone(System.Data.DataTable TODO_Mark, string BreakTriggerScopeInArgument, string GetAddress1, string GetAddress)
         {
-            var result = _runWorkflowHandler(@"Amend Document.xaml", new Dictionary<string, object>{{"In_LastDate", In_LastDate}}, default, default, default);
+            var result = _runWorkflowHandler(@"Chasing Contract Milestone.xaml", new Dictionary<string, object>{{"TODO_Mark", TODO_Mark}, {"BreakTriggerScopeInArgument", BreakTriggerScopeInArgument}, {"GetAddress1", GetAddress1}, {"GetAddress", GetAddress}}, default, default, default);
         }
     }
 }

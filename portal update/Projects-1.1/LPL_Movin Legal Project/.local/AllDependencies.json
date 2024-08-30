@@ -21438,15 +21438,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lplbot4\\.nuget\\packages\\": {}
+    "C:\\Users\\ANZA\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "LPL_Movin Legal Project",
       "projectName": "LPL_Movin Legal Project",
-      "projectPath": "C:\\Users\\lplbot4\\Documents\\LPL_Bots\\portal update\\Projects-1.1\\LPL_Movin Legal Project\\.local",
-      "packagesPath": "C:\\Users\\lplbot4\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lplbot4\\Documents\\LPL_Bots\\portal update\\Projects-1.1\\LPL_Movin Legal Project\\.local"
+      "projectPath": "C:\\Users\\ANZA\\Documents\\GitHub\\LPL--Server4-latest-codes\\portal update\\Projects-1.1\\LPL_Movin Legal Project\\.local",
+      "packagesPath": "C:\\Users\\ANZA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ANZA\\Documents\\GitHub\\LPL--Server4-latest-codes\\portal update\\Projects-1.1\\LPL_Movin Legal Project\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -21477,7 +21477,7 @@
             "version": "[24.10.0-preview, 24.10.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\lplbot4\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\ANZA\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

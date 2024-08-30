@@ -185,10 +185,10 @@
       "Path": "Hoowla Codes/Search Memorandum of sale doc in Case overview.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "RowCounter&Sequence_7",
-        "DescriptionRow&Sequence_7",
         "ExtractDataTable&Sequence_2",
-        "Str_Output_DT&Sequence_2"
+        "Str_Output_DT&Sequence_2",
+        "DescriptionRow&Sequence_7",
+        "RowCounter&Sequence_7"
       ],
       "ArgumentsSectionElementsOrder": [
         "Is_MemoExist"
@@ -233,18 +233,18 @@
       "Path": "Hoowla Codes/Change_Request Contract_date.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Date1&Sequence_8",
-        "Due_Convert&Sequence_8",
-        "DateCounter&Sequence_8",
-        "DateSplit&Sequence_8",
-        "CurrentDate&Sequence_8",
-        "IncreaseDays&Sequence_8",
-        "LastDue_Date&Sequence_8",
         "Title_Counter&Sequence_1",
-        "Due_ROW&Sequence_5",
-        "MARKASDONE_ROW&Sequence_5",
+        "ExtractDataTable&Sequence_3",
         "TODOLIST_ROW&Sequence_5",
-        "ExtractDataTable&Sequence_3"
+        "MARKASDONE_ROW&Sequence_5",
+        "Due_ROW&Sequence_5",
+        "LastDue_Date&Sequence_8",
+        "IncreaseDays&Sequence_8",
+        "CurrentDate&Sequence_8",
+        "DateSplit&Sequence_8",
+        "DateCounter&Sequence_8",
+        "Due_Convert&Sequence_8",
+        "Date1&Sequence_8"
       ],
       "ArgumentsSectionElementsOrder": [
         "FNreportStatusDT",
@@ -372,11 +372,7 @@
         "Postcode",
         "Address",
         "EMail",
-        "CompanyName",
-        "FNreportStatusDT",
-        "FNreportIndex",
-        "In_Config",
-        "In_CaseURL"
+        "CompanyName"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
